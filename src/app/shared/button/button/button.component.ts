@@ -4,7 +4,7 @@ import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
   selector: 'app-button',
   templateUrl: './button.component.html',
   styles: [
-    'button { color:red; background: aquamarine; border: 1px solid black; border-radius: 2px; height: 40px; width: 60px }'
+    'button { color:red; background: aquamarine;  border-radius: 2px; border: 2px solid black; height: 30px; width: 60px}'
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

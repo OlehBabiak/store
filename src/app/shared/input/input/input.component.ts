@@ -4,7 +4,7 @@ import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
   selector: 'app-input',
   templateUrl: './input.component.html',
   styles: [
-    'input {border: 1px solid black; border-radius: 2px; height: 30px; width: 200px }'
+    'input {border: 1px solid black;height: 30px; width: 300px; font-size: 25px}'
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
