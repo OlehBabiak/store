@@ -1,3 +1,4 @@
+// @ts-ignore
 import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 
 @Component({
@@ -8,11 +9,20 @@ import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
+
+
 export class InputComponent implements OnInit {
-  @Input() placeholder=''
-  constructor() { }
+  @Input()
+  placeholder =  ''
+  value = ''
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  onKeyUp(value: string) {
+    this.value = value
+  }
 }

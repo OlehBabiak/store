@@ -1,1 +1,7 @@
-<input type='text' [placeholder]='placeholder'>
+<input
+  type='text'
+  [placeholder]='placeholder'
+  [value]='value'
+  (keyup)='onKeyUp(titleInput.value)'
+  #titleInput
+>
